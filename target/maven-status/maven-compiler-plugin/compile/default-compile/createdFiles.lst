@@ -1,0 +1,5 @@
+consul\sdk\ServerInvoke.class
+consul\sdk\exception\ConsulInvokeException.class
+consul\sdk\dto\JsonRpcDto.class
+consul\sdk\HttpUtil.class
+consul\sdk\ServerInvoke$1.class

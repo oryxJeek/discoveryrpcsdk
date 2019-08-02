@@ -19,6 +19,17 @@ public class ServerInvoke {
     @Autowired
     private DiscoveryClient discoveryClient;
 
+
+    /**
+     *
+     * @param serverName  被调用服务 注册到consul的服务名称
+     * @param serviceName 被调用的服务service名称
+     * @param actionName  被调用的服务method名称
+     * @param version     版本号，暂时无用
+     * @param arg         调用参数
+     * @return
+     * @throws Exception
+     */
     public String call(String serverName, String serviceName, String actionName, String version, Object arg) throws Exception {
         if (StringUtils.isEmpty(serverName)) {
             throw new ConsulInvokeException("1002", "请输入serverName");
